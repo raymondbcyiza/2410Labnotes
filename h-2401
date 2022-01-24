@@ -1,0 +1,23 @@
+IP: 	 128.39.121.254
+Netmask: 255.255.254.0
+Network: 128.39.120.0/24
+Hosts: 	 128.39.120.1 - 128.39.121.254
+
+ip Binary:  1000_0000 0010_0111 0111_1001 1111_1110
+   Netmask: 1111_1111 1111_1111 1111_1110 0000_0000
+
+2^2 = 4 host.  32-2 /30 
+2^9 = 512 host. 32-9 /23
+2^10 = 1024 host. 32-10 /22
+2^11 = 2048 host. 32-11 /21
+
+128.39.120.0/23 CIDR
+128.39.120.0 network-ID
+128.39.121.255 Broadcast.
+
+
+This means that last octet, and the first bit of the third octet are addressable
+
+so we have 9 bits we can address, the first 23 are locked in.
+This means that the network is 128.39.120.0 with hosts ranging from 
+128.39.120.1 - 128.39.121.254
